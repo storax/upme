@@ -11,6 +11,11 @@ UpMe
 .. image:: http://img.shields.io/pypi/dm/upme.png
     :target: https://pypi.python.org/pypi/upme
 
+.. image:: https://coveralls.io/repos/storax/upme/badge.png
+  :target: https://coveralls.io/r/storax/upme
+
+
+
 
 
 Detects outdated packages and updates them inside python scripts
