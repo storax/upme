@@ -27,4 +27,4 @@ The full documentation is at http://upme.rtfd.org.
 Features
 --------
 
-* TODO
+* Check if package or dependencies are outdated and update them. No commandline, plain python. Easy to integrate in scripts.
