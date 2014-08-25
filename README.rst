@@ -2,14 +2,15 @@
 UpMe
 =========================================================
 
-.. image:: https://badge.fury.io/py/upme.png
-    :target: http://badge.fury.io/py/upme
+.. image:: http://img.shields.io/pypi/v/upme.png
+    :target: https://pypi.python.org/pypi/upme
 
 .. image:: https://travis-ci.org/storax/upme.png?branch=master
     :target: https://travis-ci.org/storax/upme
 
-.. image:: https://pypip.in/d/upme/badge.png
+.. image:: http://img.shields.io/pypi/dm/upme.png
     :target: https://pypi.python.org/pypi/upme
+
 
 
 Detects outdated packages and updates them inside python scripts
