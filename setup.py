@@ -35,7 +35,7 @@ class PyTest(TestCommand):
 
 
 long_description = read('README.rst', 'HISTORY.rst')
-install_requires = []
+install_requires = ['pip', 'setuptools']
 tests_require = ['pytest']
 
 
@@ -47,7 +47,8 @@ setup(
     author='David Zuber',
     author_email='zuber.david@gmx.de',
     url='https://github.com/storax/upme',
-    packages=find_packages(),
+    packages=find_packages('src'),
+    package_dir={'': 'src'},
     include_package_data=True,
     tests_require=tests_require,
     install_requires=install_requires,
