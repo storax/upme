@@ -14,13 +14,14 @@ UpMe
 .. image:: https://coveralls.io/repos/storax/upme/badge.png
   :target: https://coveralls.io/r/storax/upme
 
+.. image:: http://img.shields.io/pypi/l/upme.svg
+    :target: https://pypi.python.org/pypi/upme
+
 
 
 
 
 Detects outdated packages and updates them inside python scripts
-
-* Free software: MIT license
 
 
 Documentation
