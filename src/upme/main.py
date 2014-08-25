@@ -1,3 +1,6 @@
+import os
+import sys
+
 import pip
 import pkg_resources
 
@@ -71,3 +74,14 @@ def update(dist, args=None):
     if args:
         iargs.extend(args)
     ic.main(iargs)
+
+
+def restart():
+    """Restart the application the same way it was started
+
+    :returns: None
+    :rtype: None
+    :raises: SystemExit
+    """
+    python = sys.executable
+    os.execl(python, python, * sys.argv)
