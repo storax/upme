@@ -50,3 +50,24 @@ def is_outdated(dist):
             if d.project_name == r.project_name and parsed_ver > r.parsed_version:
                 outdated[dist] = parsed_ver
     return outdated
+
+
+def update(dist, args=None):
+    """Update the given distribution and all of its dependencies
+
+    :param dist: the distribution to check
+    :type dist: :class:`pkg_resources.Distribution` | str
+    :param args: extra arguments for the install command.
+                 this is somewhat equivalent to: pip install -U <dist> args
+    :type args: list
+    :returns: None
+    :rtype: None
+    :raises: class:`pkg_resources.DistributionNotFound`
+    """
+    dist = pkg_resources.get_distribution(dist)
+    InstallCommand = pip.commands['install']
+    ic = InstallCommand()
+    iargs = ['-U', dist.project_name]
+    if args:
+        iargs.extend(args)
+    ic.main(iargs)
