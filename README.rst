@@ -14,7 +14,7 @@ UpMe
 .. image:: https://coveralls.io/repos/storax/upme/badge.png
   :target: https://coveralls.io/r/storax/upme
 
-.. image:: http://img.shields.io/pypi/l/upme.svg
+.. image:: http://img.shields.io/pypi/l/upme.png
     :target: https://pypi.python.org/pypi/upme
 
 
