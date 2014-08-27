@@ -41,7 +41,7 @@ tests_require = ['pytest']
 
 setup(
     name='upme',
-    version='0.2.0',
+    version='0.3.0',
     description='Detects outdated packages and updates them inside python scripts',
     long_description=long_description,
     author='David Zuber',
