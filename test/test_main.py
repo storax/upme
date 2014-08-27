@@ -1,8 +1,6 @@
 """
 Tests for `upme` module.
 """
-import tempfile
-
 import pkg_resources
 
 import upme.main
@@ -23,8 +21,12 @@ class Test_Main(object):
     def test_is_outdated(self):
         p = pkg_resources.get_distribution('pip')
         p._parsed_version = ('00000000', '00000000', '00000000', '*final')
-        r = upme.main.is_outdated(p)
+        p._version = '0.0.0'
+        r = upme.main.is_outdated(p, dep=True)
         assert p in r
+        r = upme.main.is_outdated(p, dep=False)
+        assert p in r
+        assert len(r) == 1
 
     def test_update(self):
         try:
